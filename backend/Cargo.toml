@@ -1,0 +1,13 @@
+[package]
+name = "backend"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+actix-cors = "0.7.0"
+actix-web = { version = "4.8.0", features = ["cookies"] }
+chrono = "0.4.38"
+jsonwebtoken = "9.3.0"
+serde = { version = "1.0.204", features = ["derive"] }
