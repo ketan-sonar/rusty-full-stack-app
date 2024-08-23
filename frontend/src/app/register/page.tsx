@@ -1,6 +1,7 @@
 "use client";
 
 import axios, { AxiosError } from "axios";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { FormEvent, useState } from "react";
 
@@ -64,6 +65,9 @@ export default function Register() {
           Register
         </button>
       </form>
+      <Link href="/login" className="text-center underline">
+        Login Here
+      </Link>
     </main>
   );
 }
